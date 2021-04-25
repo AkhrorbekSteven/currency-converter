@@ -1,0 +1,171 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #0A146E;
+}
+
+.main-title {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+.currency-converter-wrapper {
+    width: 1200px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    box-shadow: 0px 6px 12px rgb(35 55 80 / 30%);
+}
+
+.tab-box {
+    display: flex;
+    height: 60px;
+}
+.tab {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F5FA;
+    transition: opacity 0.1s ease;
+}
+.tab.active {
+    background-color: #fff;
+}
+.tab.active svg, .tab.active span {
+    color: #006FE8;
+}
+.tab:hover {
+    opacity: 0.5;
+}
+.tab span {
+    color: #37506E;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 8px;
+}
+.tab-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.currency-box {
+    padding: 48px;
+}
+.currency-converter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.converter-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.converter-box label {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+}
+.converter-box label {
+    font-size: 18px;
+    font-weight: 700;
+}
+.converter-box label input, .converter-box label select, .converter-box label option {
+    height: 50px;
+    width: 100%;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 6px;
+    box-shadow: rgb(0 17 51 / 5%) 0px 3px 15px;
+    padding: 12px;
+    color: rgb(20, 30, 55);
+    background: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+input[type="number"]:focus {
+    background-color: none;
+}
+.converter-box button {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    background: none;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 50%;
+    padding: 16px;
+    cursor: pointer;
+}
+.converter-box button svg {
+    color: #006FE8;
+}
+
+.convert-btn {  
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    transition-property: background-color, border-color;
+    transition-duration: 0.3s;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 113, 235);
+    border: 2px solid rgb(0, 113, 235);
+    border-radius: 8px;
+    margin-top: 24px;
+}
+.convert-btn.hide {
+    display: none;
+}
+.convert-btn:hover {
+    box-shadow: 0 2px 4px 0 rgba(20, 30, 55, 0.7);
+    background: #2697ff;
+    border-color: #2697ff;
+}
+
+
+.results-box {
+    position: relative;
+    display: none;
+    margin-top: 24px;
+}
+.results-box.active {
+    display: block;
+}
+.from-result {
+    color: rgb(92, 102, 123);
+    font-weight: 600;
+    font-size: 18px;
+}
+.to-result {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #2e3c57;
+    margin-bottom: 24px;
+}
+.from-to, .to-from {
+    color: #5C667B;
+    font-size: 16px;
+}

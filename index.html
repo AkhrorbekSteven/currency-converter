@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">The World's Trusted Currency Authority</h1>
+        <div class="currency-converter-wrapper">
+            <div class="tab-box">
+                <div class="tab convert-tab active">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewbox="0 0 28 28" class="tab-icon"><path fill="currentColor" d="M22.254 11.505a7.563 7.563 0 00-3.726-2.039 7.613 7.613 0 10-9.087 9.08 7.614 7.614 0 1012.813-7.041zm-17.02-.389a5.868 5.868 0 111.72 4.149 5.83 5.83 0 01-1.72-4.149zm15.783 9.925a5.876 5.876 0 01-8.3 0 5.802 5.802 0 01-1.418-2.318 7.598 7.598 0 002.42-.46h.443c.334 1.814 1.32 2.746 2.965 2.746 1.707 0 3.096-1.13 3.096-2.517a.766.766 0 00-1.531 0c0 .403-.558.986-1.565.986-.419 0-1.11-.004-1.417-1.214h1.882a.656.656 0 100-1.313h-1.6c.162-.135.32-.277.471-.427h1.129a.656.656 0 000-1.312h-.073c.202-.319.38-.652.532-.997a1.003 1.003 0 01.638.778.766.766 0 001.531 0 2.51 2.51 0 00-1.691-2.228 7.66 7.66 0 00.176-1.44 5.803 5.803 0 012.312 1.417 5.875 5.875 0 010 8.299z"></path><path fill="currentColor" d="M14.245 12.645c0-1.123-.898-2.02-2.327-2.339l-1.008-.25c-1.04-.231-1.04-.44-1.04-.606 0-.339.54-.81 1.42-.81.445-.022.882.13 1.218.423a.607.607 0 01.201.4.764.764 0 00.765.766.766.766 0 00.766-.765 2.101 2.101 0 00-.649-1.483 3.07 3.07 0 00-1.656-.816v-.487a.656.656 0 10-1.313 0v.496A2.535 2.535 0 008.338 9.45c0 1.602 1.568 1.952 2.221 2.098l1.009.249c.529.118 1.146.41 1.146.848 0 .283-.556.825-1.426.825-.835 0-1.418-.435-1.418-.825a.766.766 0 10-1.532 0 2.51 2.51 0 002.296 2.296v.487a.656.656 0 101.312 0v-.494a2.586 2.586 0 002.299-2.29z"></path></svg>
+                    <span>Convert</span>
+                </div>
+                <div class="tab send-tab">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewbox="0 0 28 28" class="tab-icon"><path fill="currentColor" d="M21.55 6.45a.778.778 0 00-.836-.174l-17.5 6.922a.779.779 0 00-.06 1.42l6.83 3.403 3.435 6.797a.778.778 0 00.695.428l.036-.001a.779.779 0 00.689-.492l6.886-17.468a.778.778 0 00-.174-.836zm-7.524 16.118l-2.515-4.977 4.79-4.79a.778.778 0 00-1.1-1.101l-4.793 4.793-4.998-2.49 14.208-5.62-5.592 14.185z"></path></svg>
+                    <span>Send</span>
+                </div>
+                <div class="tab charts-tab">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewbox="0 0 28 28" class="tab-icon"><path fill="currentColor" d="M23.591 22.756l-18.366.001V19.55l5.202-5.94 4.576 6.135a.877.877 0 001.383.024l7.027-8.752a.875.875 0 10-1.363-1.095l-6.32 7.87-4.547-6.096a.875.875 0 00-.667-.35.903.903 0 00-.692.297l-4.6 5.252V4.458a.875.875 0 00-1.75 0v19.174a.875.875 0 00.876.875l19.241-.001a.875.875 0 000-1.75z"></path></svg>
+                    <span>Charts</span>
+                </div>
+                <div class="tab alerts-tab">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewbox="0 0 28 28" class="tab-icon"><path fill="currentColor" d="M19.796 5.262a1.243 1.243 0 00-1.803-1.129 1.208 1.208 0 00-.428.385 5.749 5.749 0 00-6.126 3.885l-.63 1.89a15.888 15.888 0 01-3.788 6.125l-.761.753a.875.875 0 00.34 1.452l7.666 2.59a1.42 1.42 0 00-.097.508 1.488 1.488 0 002.905.429l3.037 1.015a.875.875 0 001.137-.954l-.149-1.059a15.752 15.752 0 01.648-7.184l.63-1.89a5.748 5.748 0 00-2.581-6.816zm.875 6.213l-.622 1.863a17.502 17.502 0 00-.76 7.64l-10.79-3.562a17.5 17.5 0 004.017-6.571l.595-1.882a3.99 3.99 0 017.569 2.52l-.01-.008z"></path></svg>
+                    <span>Alerts</span>
+                </div>
+            </div>
+            <div class="currency-box">
+                <form class="currency-converter">
+                    <div class="converter-box">
+                        <label class="input amount-input">
+                            <span>Amount</span>
+                            <input type="number" id="amountInput" required placeholder="100">
+                        </label>
+                        <label class="input from-input">
+                            <span>From</span>
+                            <select id="fromSelect"></select>
+                        </label>
+                        <button class="swap-currencies" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 17 17" aria-hidden="true" class="miscellany___StyledIconSwap-sc-1r08bla-1 fZJuOo"><path fill="currentColor" fill-rule="evenodd" d="M11.726 1.273l2.387 2.394H.667V5h13.446l-2.386 2.393.94.94 4-4-4-4-.94.94zM.666 12.333l4 4 .94-.94L3.22 13h13.447v-1.333H3.22l2.386-2.394-.94-.94-4 4z" clip-rule="evenodd"></path></svg>
+                        </button>
+                        <label class="input to-input">
+                            <span>To</span>
+                            <select id="toSelect"></select>
+                        </label>
+                    </div>
+                    <button type="submit" class="convert-btn">convert</button>
+                </form>
+                <div class="results-box">
+                    <p class="from-result"></p>
+                    <p class="to-result"></p>
+                    <p class="from-to"></p>
+                    <p class="to-from"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
